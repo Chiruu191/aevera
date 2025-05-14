@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - Aevera E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">aevera</a>
+        <nav>
+            <ul>                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="account.html">ACCOUNT</a></li>
+                <li><a href="blog.html">OTHER PAGES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="account-container">
+        <aside class="account-nav">
+            <ul>
+                <li><a href="account.html">PROFILE</a></li>
+                <li><a href="cart.html">CART</a></li>
+                <li><a href="orders.html">ORDERS</a></li>
+                <li><a href="delivered.html">DELIVERED</a></li>
+                <li><a href="refund.html">REFUND</a></li>
+                <li><a href="reviews.html" class="active">CUSTOMER REVIEWS</a></li>
+            </ul>
+        </aside>
+
+        <div class="reviews-content">
+            <h2>Your Reviews</h2>
+            <section class="review-form">
+                <h3>Write a Review</h3>
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label for="productSelect">Select Product:</label>
+                        <select id="productSelect" required>
+                            <option value="">Choose a product...</option>
+                            <!-- Products will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Rating:</label>
+                        <select id="rating" required>
+                            <option value="5">★★★★★</option>
+                            <option value="4">★★★★☆</option>
+                            <option value="3">★★★☆☆</option>
+                            <option value="2">★★☆☆☆</option>
+                            <option value="1">★☆☆☆☆</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="reviewText">Your Review:</label>
+                        <textarea id="reviewText" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-review">Submit Review</button>
+                </form>
+            </section>
+
+            <section class="past-reviews">
+                <h3>Your Past Reviews</h3>
+                <div id="reviewsList">
+                    <!-- Past reviews will be populated by JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © 2025 aevera all rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

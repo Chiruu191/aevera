@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Aevera E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>        <a href="index.html" class="logo">aevera</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html" class="active">SHOP</a></li>
+                <li><a href="account.html">ACCOUNT</a></li>
+                <li><a href="blog.html">OTHER PAGES</a></li>
+            </ul>
+        </nav>
+        <hr class="dashed">
+        <hr class="solid">
+    </header>    <main class="product-detail">
+        <div class="product-image-large">
+            <img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/475380/sub/goods_475380_sub14_3x4.jpg?width=423" alt="" class="product-img">
+        </div>
+        <div class="product-info" data-product-id="top1">
+            <h1 class="product-name">Crew Neck Short Sleeve T-Shirt</h1>
+            <p class="product-price">PHP 590.00</p>
+            
+            <div class="product-options">
+                <div class="color-options">
+                    <h2>SELECT COLOR</h2>
+                    <div class="color-swatches">
+                        <button class="color-swatch" style="background-color: black;" onclick="selectColor(this)"></button>
+                        <button class="color-swatch" style="background-color: #eef1e8;" onclick="selectColor(this)"></button>
+                         <button class="color-swatch" style="background-color: #0799d3;" onclick="selectColor(this)"></button>
+                    </div>
+                </div>
+
+                <div class="size-options">
+                    <h2>SELECT SIZE</h2>
+                    <div class="size-buttons">
+                        <button class="size-button" data-size="S" onclick="selectProduct(this, 'S')">S</button>
+                        <button class="size-button" data-size="M" onclick="selectProduct(this, 'M')">M</button>
+                        <button class="size-button" data-size="L" onclick="selectProduct(this, 'L')">L</button>
+                        <button class="size-button" data-size="XL" onclick="selectProduct(this, 'XL')">XL</button>
+                    </div>
+                </div>                <div class="quantity-selector">
+                    <h2>QUANTITY</h2>
+                    <div class="quantity-controls">
+                        <button onclick="updateQuantity('decrease')">-</button>
+                        <span id="quantity">1</span>
+                        <button onclick="updateQuantity('increase')">+</button>
+                    </div></div><div class="product-actions">
+                    <button class="add-to-cart">Add to cart</button>
+                    <button class="buy-now">Buy this product</button>
+                </div> 
+            </div>
+                   
+    </main><footer>
+        <p>Copyright © 2025 aevera all rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- <script src="product.js"></script> -->
+</body>
+</html>
